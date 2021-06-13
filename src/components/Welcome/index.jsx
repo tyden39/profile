@@ -11,15 +11,12 @@ function WelCome(props) {
                     <h1>Welcome</h1>
                     <p>I'm a Web Developer.</p>
                     <p>from Binh Chanh, HCM city.</p>
-                    <a href="#about">
-                        <ChevronWraper>
-                            <Chevron />
-                            <Chevron />
-                            <Chevron />
-                        </ChevronWraper>
-                        <p style={{ color: "gray" }}>Scroll</p>
-                    </a>
                 </ContentCenter>
+                <ChevronWraper href="#about">
+                    <Chevron />
+                    <Chevron />
+                    <Chevron />
+                </ChevronWraper>
             </WelcomeContent>
         </WelcomeWrapper>
     );

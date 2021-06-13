@@ -36,10 +36,14 @@ export const ContentCenter = styled.div`
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);`;
 
-export const ChevronWraper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;`;
+export const ChevronWraper = styled.a`
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -17px;
+    height: 70px;
+    width: 34px;
+    `;
 
 const base = .6;
 
