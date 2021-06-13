@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const HeaderWraper = styled.div`
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     position: absolute;
     top: 0;
     left: 0;

@@ -25,10 +25,12 @@ function Header(props) {
 
     return (
         <HeaderWraper id="header" stickyOn={stickyOn}>
-            <MenuItem href="#welcome">Welcome</MenuItem>
-            <MenuItem href="#about">About</MenuItem>
-            <MenuItem href="#myskill">My Skills</MenuItem>
-            <MenuItem href="#contact">Contact</MenuItem>
+            <div className="relatetive">
+                <MenuItem href="#welcome">Welcome</MenuItem>
+                <MenuItem href="#about">About</MenuItem>
+                <MenuItem href="#myskill">My Skills</MenuItem>
+                <MenuItem href="#contact">Contact</MenuItem>
+            </div>
         </HeaderWraper>
     );
 }
