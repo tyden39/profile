@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import background from "./background.jpg";
 
 export const WelcomeWrapper = styled.div`
@@ -100,5 +100,18 @@ export const Chevron = styled.div`
         right: 0;
         width: 50%;
         transform: skewY(-30deg);
+    }
+`;
+
+const blinkCaret = keyframes`
+    from { opacity: 1 }
+    to { opacity: 0}
+`;
+
+export const TypedCursur = styled.span`
+    font-weight: bold;
+    font-size: 80px;
+    ${props => props.blink && css`
+        animation: ${blinkCaret} .75s infinite;`
     }
 `;
